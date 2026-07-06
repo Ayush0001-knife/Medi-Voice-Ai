@@ -14,7 +14,7 @@ class Doctors(models.Model):
           return self.name
       
       class Meta:
-          db_table = "doctor"
+          db_table = "doctors"
           verbose_name = "Doctor"
           verbose_name_plural = "Doctors"
         
