@@ -1,0 +1,38 @@
+export default [
+  {
+    id: 1,
+    name: "Dr. James Carter",
+    spec: "General Physician",
+    emoji: "👨‍⚕️",
+    date: "Jun 28, 2026 · 10:30 AM",
+    status: "done",
+    statusLabel: "Completed",
+  },
+  {
+    id: 2,
+    name: "Dr. Priya Nair",
+    spec: "Dermatologist",
+    emoji: "🔬",
+    date: "Jul 1,  2026 · 2:00 PM",
+    status: "upcoming",
+    statusLabel: "Upcoming",
+  },
+  {
+    id: 3,
+    name: "Dr. Arun Mehta",
+    spec: "Cardiologist",
+    emoji: "🫀",
+    date: "Jun 20, 2026 · 9:00 AM",
+    status: "done",
+    statusLabel: "Completed",
+  },
+  {
+    id: 4,
+    name: "Dr. Emily Wong",
+    spec: "Pediatrician",
+    emoji: "👶",
+    date: "Jul 5,  2026 · 11:00 AM",
+    status: "pending",
+    statusLabel: "Pending",
+  },
+];
