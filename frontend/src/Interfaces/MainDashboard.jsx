@@ -17,6 +17,7 @@ export default function MainDashboard() {
   const [selectedSlot, setSelectedSlot] = useState(null);
   const [toast, setToast] = useState(null);
   const profileRef = useRef(null);
+  const [doctors, setDoctors] = useState([]);
 
   /* inject CSS */
   useEffect(() => {
@@ -37,8 +38,26 @@ export default function MainDashboard() {
   }, []);
 
   useEffect(() => {
-    const Response = awai;
-  });
+    const fetchDoctors = async () => {
+      try {
+        const response = await fetch("http://127.0.0.1:8000/api/v1/doctors/");
+
+        if (!response.ok) {
+          throw new Error("Failed to fetch doctors");
+        }
+
+        const data = await response.json();
+
+        console.log(data);
+
+        setDoctors(data);
+      } catch (error) {
+        console.error("Error fetching doctors:", error);
+      }
+    };
+
+    fetchDoctors();
+  }, []);
 
   const showToast = (msg, type = "") => {
     setToast({ msg, type });
@@ -57,9 +76,9 @@ export default function MainDashboard() {
 
   const filteredDoctors =
     specialty === "All"
-      ? DOCTORS
-      : DOCTORS.filter((d) =>
-          d.spec
+      ? doctors
+      : doctors.filter((d) =>
+          d.category
             .toLowerCase()
             .includes(
               specialty
