@@ -36,6 +36,10 @@ export default function MainDashboard() {
     return () => document.removeEventListener("mousedown", handler);
   }, []);
 
+  useEffect(() => {
+    const Response = awai;
+  });
+
   const showToast = (msg, type = "") => {
     setToast({ msg, type });
     setTimeout(() => setToast(null), 3000);

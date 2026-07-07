@@ -1,10 +1,15 @@
 export default [
-  "All",
-  "Cardiology",
-  "Neurology",
-  "Dermatology",
-  "Psychiatry",
-  "Orthopedics",
-  "Pediatrics",
-  "Pulmonology",
+    "All",
+    "General Physician",
+    "Cardiology",
+    "Neurology",
+    "Dermatology",
+    "Orthopedics",
+    "Pediatrics",
+    "Psychiatry",
+    "ENT",
+    "Pulmonology",
+    "Ophthalmology",
+    "General Medicine",
 ];
+
