@@ -8,7 +8,7 @@ const StatsRow = () => {
         <div
           key={i}
           className="stat-card"
-          style={{ animationDelay: `${s.delay}s` }}
+          style={{ animationDelay: `${i * 0.2}s` }}
         >
           <div className={`sc-icon ${s.color}`}>{s.icon}</div>
           <div className="sc-val">{s.val}</div>

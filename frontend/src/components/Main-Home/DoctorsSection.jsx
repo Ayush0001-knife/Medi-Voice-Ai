@@ -49,8 +49,10 @@ const DoctorsSection = ({
                 <span style={{ position: "relative", zIndex: 1, fontSize: 60 }}>
                   {doc.emoji}
                 </span>
-                <div className={`dc-badge ${doc.premium ? "premium" : "free"}`}>
-                  {doc.premium ? "Premium" : "Free"}
+                <div
+                  className={`dc-badge ${doc.tier === "premium" ? "premium" : "free"}`}
+                >
+                  {doc.tier === 1 ? "Premium" : "Free"}
                 </div>
               </div>
               <div className="dc-body">
@@ -60,7 +62,9 @@ const DoctorsSection = ({
                   <div className="dc-rating">
                     <span>★</span> {doc.rating}
                   </div>
-                  <div className="dc-patients">{doc.patients} patients</div>
+                  <div className="dc-patients">
+                    {doc.patient_attended} patients
+                  </div>
                 </div>
                 <button
                   className="dc-btn"

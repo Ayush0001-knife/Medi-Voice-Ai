@@ -6,7 +6,6 @@ export default [
       delta: "↑ 3 this month",
       up: true,
       color: "g",
-      delay: 0.2,
     },
     {
       icon: "⭐",
@@ -15,7 +14,6 @@ export default [
       delta: "Top 5% doctors",
       up: true,
       color: "b",
-      delay: 0.28,
     },
     {
       icon: "⏳",
@@ -24,7 +22,6 @@ export default [
       delta: "Action needed",
       up: false,
       color: "a",
-      delay: 0.36,
     },
     {
       icon: "💊",
@@ -33,6 +30,5 @@ export default [
       delta: "↑ 1 this week",
       up: true,
       color: "p",
-      delay: 0.44,
     },
   ];
